@@ -1,0 +1,30 @@
+# Projet C++ : Détection de droites (RANSAC & Transformée de Hough)
+
+# Description
+
+Ce projet a pour objectif de mettre en place différentes méthodes de détection de droites dans une image.
+L’idée est de comparer plusieurs approches en partant d’une méthode simple, puis en allant vers des techniques plus robustes.
+
+Le projet est réalisé en C++ dans le cadre d’un cours de traitement d’images.
+
+# Séance 1 — Hough naïf
+
+Lors de la première séance, une première version de la transformée de Hough a été implémentée de manière naïve.
+Cette approche permet de détecter des droites dans une image, mais reste limitée en termes de précision et d’efficacité.
+De plus, elle ne permet pas de voir les droites verticales.
+
+# Séance 2 — Hough (ρ, θ) et visualisation de l’accumulateur
+
+La deuxième séance a permis d’améliorer l’approche en utilisant une représentation en coordonnées polaires (ρ, θ).
+Cette version est plus robuste et permet une meilleure détection des droites.
+
+La visualisation des droites les plus probables dans l'espace de Hough a été mis en place.
+
+# Séance 3 — Début de RANSAC
+
+Lors de cette séance, le travail sur l’algorithme RANSAC a commencé.
+Le principe repose sur la sélection aléatoire de points dans l’image afin de construire un modèle de droite.
+Une première version permet de générer des droites à partir de points choisis aléatoirement et de commencer à identifier
+les points proches de ces droites.
+
+Cette partie est encore en cours de développement et sera améliorée lors des prochaines séances.
